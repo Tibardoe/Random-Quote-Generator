@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --backgroundColor: linear-gradient(to right, rgb(65, 15, 78), rgb(14, 46, 74));
+    --fontFamily: "Roboto", serif;
+    --quoteFontSize: 3rem;
+    --authorFontSize: 1.5rem;
+    --textColor: white;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-image: var(--backgroundColor);
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fontFamily);
+}
+
+.quote-container {
+    width: 80%;
+}
+
+p {
+    font-size: var(--quoteFontSize);
+    color: var(--textColor);
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+small {
+    display: block;
+    font-size: var(--authorFontSize);
+    color: var(--textColor);
+    text-align: right;
+}
+
+.quote-button {
+    border: none;
+    font-size: 1.5rem;
+    background-color: aquamarine;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
